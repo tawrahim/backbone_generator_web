@@ -52,7 +52,7 @@
         <ul class="nav nav-tabs" id="pluginTab">
           <li class="active"><a href="#overview">How To Use</a></li>
           <!--<li><a href="#examples">Examples</a></li>-->
-          <!--<li><a href="#documentation">Documentation</a></li>-->
+          <li><a href="#documentation">Installation</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#roadmap">Roadmap and changelog</a></li>
         </ul>
@@ -64,38 +64,39 @@
           -->
           <div class="tab-pane active" id="overview">
                     	<section class="sec-header">
-                <h3 class="font-bree-serif">Link Css</h3>
-                <p>Move the <strong>plugin CSS</strong> file to your server and link to it in the <code><abbr title="<head>">head</abbr></code> section of your document.</p>
-				<pre class="prettyprint linenums">&lt;link rel="stylesheet" href="yourplugin.css" /&gt;</pre>
+                <h3 class="font-bree-serif">new app</h3>
+                <p>To create a new app do</p>
+                <pre class="prettyprint linenums"> backbone_generator new app_name </pre>
 			</section>
             <section class="sec-header">
-                <h3 class="font-bree-serif">Link JS</h3>
-                <p>Move the <strong>plugin JS</strong> file to your server and link to it before the closing <code><abbr title="<body>">body</abbr></code> tag.</p>
-                <p>Please note that you must include jQuery (v1.7 or later) before the slider JS file.</p>
-				<pre class="prettyprint linenums">
-&lt;script src="jquery-1.7.1.min.js"&gt;&lt;/script&gt;
-&lt;script src="jquery.yourplugin.min.js"&gt;&lt;/script&gt;
-</pre>
+                <h3 class="font-bree-serif">model</h3>
+                <p>To create a model do</p>
+				<pre class="prettyprint linenums"> backbone_generator model model_name </pre>
 			</section>
             <section class="sec-header">
-                <h3 class="font-bree-serif">The Markup</h3>
-                <p>Add the following markup</p>
-                <pre class="prettyprint linenums">&lt;ul class="thumbnails"&gt;
-&lt;li class="span4"&gt; &lt;a href="#" class="thumbnail"&gt; &lt;img src="http://placehold.it/360x268" alt=""&gt; &lt;/a&gt; &lt;/li&gt;
-....
-&lt;/ul&gt;
-</pre>
+                <h3 class="font-bree-serif">view</h3>
+                <p>To create a view do</p>
+                <pre class="prettyprint linenums"> backbone_generator view view_name </pre>
 </section>
 <section class="sec-header">
-                <h3 class="font-bree-serif">Call Plugin</h3>
-                <p>Just before the closing <code><abbr title="<body>">body</abbr></code> tag (after any JS file includes), call the plugin with code below:</p>
-                <pre class="prettyprint linenums">
-&lt;script&gt;
-$(document).ready(function () {
-	$('.selector').yourPlugin();
-});
-&lt;/script&gt;
-</pre>
+                <h3 class="font-bree-serif">route</h3>
+                <p>To create a route do</p>
+                <pre class="prettyprint linenums"> backbone_generator route route_name </pre>
+</section>
+<section class="sec-header">
+                <h3 class="font-bree-serif">collection</h3>
+                <p>To create a collection do</p>
+                <pre class="prettyprint linenums"> backbone_generator collection collection_name </pre>
+</section>
+<section class="sec-header">
+                <h3 class="font-bree-serif">utility</h3>
+                <p>To create a utility do</p>
+                <pre class="prettyprint linenums"> backbone_generator utility utility_name </pre>
+</section>
+<section class="sec-header">
+                <h3 class="font-bree-serif">library</h3>
+                <p>To create a library do</p>
+                <pre class="prettyprint linenums"> backbone_generator library library_name </pre>
 </section>
           </div>
           <!--end overview-content-->
@@ -149,96 +150,21 @@ thumbnails {
           </div><!--end examples-content-->
           <!-- 
           =====================================
-          How to Use Tab Content
-          =====================================
-          -->
-          <div class="tab-pane" id="howtouse">
-                    	<section class="sec-header">
-                <h3 class="font-bree-serif">Link Css</h3>
-                <p>Move the <strong>plugin CSS</strong> file to your server and link to it in the <code><abbr title="<head>">head</abbr></code> section of your document.</p>
-				<pre class="prettyprint linenums">&lt;link rel="stylesheet" href="yourplugin.css" /&gt;</pre>
-			</section>
-            <section class="sec-header">
-                <h3 class="font-bree-serif">Link JS</h3>
-                <p>Move the <strong>plugin JS</strong> file to your server and link to it before the closing <code><abbr title="<body>">body</abbr></code> tag.</p>
-                <p>Please note that you must include jQuery (v1.7 or later) before the slider JS file.</p>
-				<pre class="prettyprint linenums">
-&lt;script src="jquery-1.7.1.min.js"&gt;&lt;/script&gt;
-&lt;script src="jquery.yourplugin.min.js"&gt;&lt;/script&gt;
-</pre>
-			</section>
-            <section class="sec-header">
-                <h3 class="font-bree-serif">The Markup</h3>
-                <p>Add the following markup</p>
-                <pre class="prettyprint linenums">&lt;ul class="thumbnails"&gt;
-&lt;li class="span4"&gt; &lt;a href="#" class="thumbnail"&gt; &lt;img src="http://placehold.it/360x268" alt=""&gt; &lt;/a&gt; &lt;/li&gt;
-....
-&lt;/ul&gt;
-</pre>
-</section>
-<section class="sec-header">
-                <h3 class="font-bree-serif">Call Plugin</h3>
-                <p>Just before the closing <code><abbr title="<body>">body</abbr></code> tag (after any JS file includes), call the plugin with code below:</p>
-                <pre class="prettyprint linenums">
-&lt;script&gt;
-$(document).ready(function () {
-	$('.selector').yourPlugin();
-});
-&lt;/script&gt;
-</pre>
-</section>
-          </div><!--end howtouse-content-->
-          <!-- 
-          =====================================
           Documentation Tab Content
           =====================================
           -->
           <div class="tab-pane" id="documentation">
              <section class="sec-header">
-                <h3 class="font-bree-serif">Plugin Settings</h3>
-                <p>Plugin accepts settings from an object of key/value pairs, and can be assigned to any HTML element.</p>
-                <table class="table table-bordered settings">
-                <thead>
-                <tr>
-                	<th><strong>Property</strong></th>
-                    <th><strong>Default</strong></th>
-                    <th><strong>Description</strong></th>
-                </tr>
-                </thead>
-                <tbody>
-                	<tr>
-                        <td>Property1</td>
-                        <td>Default Value</td>
-                        <td>some description about this</td>
-                    </tr>
-                    <tr>
-                        <td>Property2</td>
-                        <td>"Default String"</td>
-                        <td>some description about this</td>
-                    </tr>
-                    <tr>
-                        <td>Property3</td>
-                        <td>false</td>
-                        <td>some description about this</td>
-                    </tr>
-                    <tr>
-                        <td>Property4</td>
-                        <td>Default Value</td>
-                        <td>some description about this</td>
-                    </tr>
-                    <tr>
-                        <td>Property5</td>
-                        <td>"Default String"</td>
-                        <td>some description about this</td>
-                    </tr>
-                    <tr>
-                        <td>Property6</td>
-                        <td>false</td>
-                        <td>some description about this</td>
-                    </tr>
-                </tbody>
-                </table>
+                <h3 class="font-bree-serif">Installation Notes</h3>
                 
+            <section class="sec-header">
+                <p>Add this line to your application's Gemfile: </p>
+                <pre class="prettyprint linenums">gem 'backbone_generator' </pre>
+                <p>And then execute:</p>
+                <pre class="prettyprint linenums">$ bundle </pre>
+                <p>Or install it yourself as:</p>
+                <pre class="prettyprint linenums">$ gem install backbone_generator </pre>
+            </section>
            </section>
           </div><!--end documentation-content-->
           <!-- 
@@ -297,7 +223,7 @@ $(document).ready(function () {
           <div class="tab-pane" id="roadmap">
             <section class="sec-header">
               <h3 class="font-bree-serif">Roadmap</h3>
-              <p>For more up-to-date information on release dates for these versions, please refer to the <a href="#" class="tip" title="Link to your Github Account">Issues Milestones</a>.</p>
+              <p>For more up-to-date information on release dates for these versions, please refer to the <a href="https://github.com/tawrahim/backbone_generator/issues/milestones" class="tip" title="project milestone">project Milestones</a>.</p>
               <table class="table table-bordered">
                   <thead>
                       <tr>
@@ -307,19 +233,19 @@ $(document).ready(function () {
                   </thead>
                   <tbody>
                   <tr>
-                      <td>1.0.3</td>
+                      <td>0.0.4</td>
                       <td>Description about this version goes here</td>                  
                   </tr>
                   <tr>
-                      <td>1.0.2</td>
+                      <td>0.0.3</td>
                       <td>Description about this version goes here</td>                  
                   </tr>
                   <tr>
-                      <td>1.0.1</td>
+                      <td>0.0.2</td>
                       <td>Description about this version goes here</td>                  
                   </tr>
                   <tr>
-                      <td>1.0.0</td>
+                      <td>0.0.1</td>
                       <td>Description about this version goes here</td>                  
                   </tr>
                   
@@ -412,7 +338,7 @@ $(document).ready(function () {
       </div><!--end tabbable-->
       
       <div class="well align-center">
-        	<h4>For any queries or issues. <a href="#">Submit issues</a> on github or Contact me <a href="mailto:">plugin-support@gmail.com</a></h4>
+        	<h4>For any queries or issues. <a href="https://github.com/tawrahim/backbone_generator/issues">Submit issues</a> on github or Contact me <a href="mailto:">tawrahim@gmail.com</a></h4>
       </div><!--end well-->
     </div><!--end span12-->
   </div><!--end row-->
@@ -424,7 +350,7 @@ $(document).ready(function () {
           <div class="span6">
           </div>
           <div class="span2 offset4">
-          <p><a href="#" id="top">Go To Top</a></p>
+          <!--<p><a href="#" id="top">Go To Top</a></p>-->
           </div><!--end span2-->
       </div><!--end row-->  
       </div><!--end container-->  

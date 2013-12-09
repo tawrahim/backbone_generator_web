@@ -44,7 +44,13 @@ hr.soften {
   border: 0;
 }
 
-/* Google WebFonts */
+iframe {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
 .font-bree-serif{
   font-family: 'Bree Serif', serif;
   font-weight:400;

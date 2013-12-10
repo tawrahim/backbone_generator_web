@@ -39,7 +39,7 @@
     <h1 class="font-bree-serif">backbone_generator</h1>
     <p class="font-open-sans-normal">A plugin that helps you build your backbone.js apps</p>
     
-    <p class="jumbo"> <a href="https://github.com/tawrahim/backbone_generator" class="btn btn-inverse btn-large font-open-sans-normal"><strong>View Plugin on GitHub</strong></a> <a href="https://rubygems.org/gems/backbone_generator" class="btn btn-success btn-large font-open-sans-normal"><strong>View on rubygems.org</strong><small>(v0.0.3)</small></a> </p>
+    <p class="jumbo"> <a href="https://github.com/tawrahim/backbone_generator" class="btn btn-inverse btn-large font-open-sans-normal"><strong>View gem on GitHub</strong></a> <a href="https://rubygems.org/gems/backbone_generator" class="btn btn-success btn-large font-open-sans-normal"><strong>View on rubygems.org</strong><small>(v0.0.4)</small></a> </p>
     
 <a href="https://github.com/tawrahim/backbone_generator"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
   </div><!--end container-->  
@@ -65,8 +65,8 @@
           -->
           <div class="tab-pane active" id="overview">
                     	<section class="sec-header">
-                <h3 class="font-bree-serif">new app</h3>
-                <p>To create a new app do</p>
+                <h3 class="font-bree-serif">new</h3>
+                <p>To scaffold out new backbonejs app run this command</p>
                 <pre class="prettyprint linenums"> backbone_generator new app_name </pre>
 			</section>
             <section class="sec-header">
@@ -91,13 +91,20 @@
 </section>
 <section class="sec-header">
                 <h3 class="font-bree-serif">utility</h3>
-                <p>To create a utility do</p>
+                <p>To add a utility to your project run this command</p>
                 <pre class="prettyprint linenums"> backbone_generator utility utility_name </pre>
 </section>
 <section class="sec-header">
                 <h3 class="font-bree-serif">library</h3>
-                <p>To create a library do</p>
+                <p>To create add a new javascript library to your project run this command</p>
                 <pre class="prettyprint linenums"> backbone_generator library library_name </pre>
+</section>
+<section class="sec-header">
+                <h3 class="font-bree-serif">server</h3>
+                <p>To start a server run this command</p>
+                <pre class="prettyprint linenums"> backbone_generator server {optional port number}  </pre>
+                <p>The default port that server starts on is 5000, conditionally you can specify
+                a different port number</p>
 </section>
           </div>
           <!--end overview-content-->
@@ -185,7 +192,12 @@ thumbnails {
                       </div>
                       <div id="collapse1" class="accordion-body collapse in">
                         <div class="accordion-inner">
-                            Todo.....
+                            <p>Out the box, the generator includes the following javascript libraries</p>
+                            <li>backbone-1.1.0.js</li>
+                            <li>jquery-2.0.3.min.js</li>
+                            <li>text-2.0.10.js</li>
+                            <li>require-2.1.9.js</li>
+                            <li>underscore-1.5.2.js</li>
                         </div>
                       </div>
                     </div>
@@ -197,7 +209,15 @@ thumbnails {
                       </div>
                       <div id="collapse2" class="accordion-body collapse">
                         <div class="accordion-inner">
-                            Todo.....
+                            The naming conventions of files used in this project is heavily influenced by this <a href="http://lostechies.com/derickbailey/2012/02/02/javascript-file-folder-structures-just-pick-one/">post</a> by Derick Bailey. And I quote directly from his amazing post
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <blockquote>
+                                 if you have a model type name “Person”, a collection type named “Persons”, and a view to represent a single person or a collection of persons, what do you call that view? If you’re organizing things by type, you can call every “Person” and “Persons”
+
+                                 This can be very confusing. I was recently working with a client who was using an editor that only shows the file name for the open files, and none of the folder path for the files. He ended up with 4 “person.js” files in his open file list. Which one was the Person model, view, router, or controller file? We had to open each file to find the one we needed, every time. So, we took the hit on the file names. The “person.js” file contained the person model, while “persons.js” contained the collection, “personviews.js” contained the view definitions and “personrouter.js” contained the router. Thus, we’ve moved the need for specifying the object type from the folder structure (with all it’s bad ideas for using that) to the file name.
+                            </blockquote>
                         </div>
                       </div>
                     </div>
@@ -223,7 +243,23 @@ thumbnails {
           !-->
 
           <div class="tab-pane" id="tutorial">
-              <iframe width="760" height="415" src="//www.youtube.com/embed/jvk-n6azAcM" frameborder="0" allowfullscreen></iframe>
+                <h3 class="font-bree-serif">Getting Started</h3>
+              <iframe width="760" height="415" src="//www.youtube.com/embed/azAcM" frameborder="0" allowfullscreen></iframe>
+
+                <h3 class="font-bree-serif">Adding a model</h3>
+              <iframe width="760" height="415" src="//www.youtube.com/embed/azAcM" frameborder="0" allowfullscreen></iframe>
+                <h3 class="font-bree-serif">Adding a view</h3>
+              <iframe width="760" height="415" src="//www.youtube.com/embed/azAcM" frameborder="0" allowfullscreen></iframe>
+                <h3 class="font-bree-serif">Adding a template</h3>
+              <iframe width="760" height="415" src="//www.youtube.com/embed/azAcM" frameborder="0" allowfullscreen></iframe>
+                <h3 class="font-bree-serif">Adding a collection</h3>
+              <iframe width="760" height="415" src="//www.youtube.com/embed/azAcM" frameborder="0" allowfullscreen></iframe>
+                <h3 class="font-bree-serif">Adding a utility</h3>
+              <iframe width="760" height="415" src="//www.youtube.com/embed/azAcM" frameborder="0" allowfullscreen></iframe>
+                <h3 class="font-bree-serif">Modifying the routes</h3>
+              <iframe width="760" height="415" src="//www.youtube.com/embed/azAcM" frameborder="0" allowfullscreen></iframe>
+                <h3 class="font-bree-serif">Adding a jasmine test</h3>
+              <iframe width="760" height="415" src="//www.youtube.com/embed/azAcM" frameborder="0" allowfullscreen></iframe>
           </div><!--end tutorial-content-->
            <!-- 
           =====================================
@@ -348,7 +384,7 @@ thumbnails {
       </div><!--end tabbable-->
       
       <div class="well align-center">
-        	<h4>For any questions or issues. <a href="https://github.com/tawrahim/backbone_generator/issues">Submit issues</a> on github or Contact me at <a href="mailto:">tawrahim@gmail.com</a></h4>
+        	<h4>For any questions or issues. Please <a href="https://github.com/tawrahim/backbone_generator/issues">submit issues</a> on github or Contact me at <a href="mailto:">tawrahim@gmail.com</a></h4>
       </div><!--end well-->
     </div><!--end span12-->
   </div><!--end row-->

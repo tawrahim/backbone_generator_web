@@ -184,7 +184,7 @@ footer p{
 
 @media only screen and (max-width: 1024px) and (orientation:landscape) {
 #brand{
-  background: url(../img/logo.png) 50% 0 no-repeat scroll !important; 
+  background: url(../img/logo_copy.png) 50% 0 no-repeat scroll !important; 
   background-position: center;
   background-size: cover;
   -webkit-background-size: cover;
@@ -197,7 +197,7 @@ footer p{
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
 #brand{
-  background: url(../img/logo.png) 50% 80% 0 no-repeat scroll !important; 
+  background: url(../img/logo_copy.png) 50% 80% 0 no-repeat scroll !important; 
   background-position: center;
   background-size: cover;
   -webkit-background-size: cover;
@@ -212,7 +212,7 @@ header{
   margin-top: 20px;
 }	
 #brand{
-  background: url(../img/logo.png) 50% 50% 0 no-repeat scroll !important; 
+  background: url(../img/logo_copy.png) 50% 50% 0 no-repeat scroll !important; 
   background-position:center;
   background-size: cover;
   -webkit-background-size: cover;

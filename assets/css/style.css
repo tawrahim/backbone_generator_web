@@ -95,7 +95,7 @@ header{
 .masthead{ text-align:center;}
 #brand{
   display: block;	
-  background: url(../img/logo_copy.png) no-repeat; 
+  /*background: url(../img/logo_copy.png) no-repeat; */
   background-position:center;
   width: auto; 
   height: 408px;
@@ -182,9 +182,26 @@ footer p{
   
 }
 
+.tutorial img {
+    padding: 2px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.tutsImg {
+    padding-bottom: 15px;
+}
+
+
 @media only screen and (max-width: 1024px) and (orientation:landscape) {
 #brand{
-  background: url(../img/logo_copy.png) 50% 0 no-repeat scroll !important; 
+  /*background: url(../img/logo_copy.png) 50% 0 no-repeat scroll !important; */
   background-position: center;
   background-size: cover;
   -webkit-background-size: cover;
@@ -197,7 +214,7 @@ footer p{
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
 #brand{
-  background: url(../img/logo_copy.png) 50% 80% 0 no-repeat scroll !important; 
+  /*background: url(../img/logo_copy.png) 50% 80% 0 no-repeat scroll !important; */
   background-position: center;
   background-size: cover;
   -webkit-background-size: cover;

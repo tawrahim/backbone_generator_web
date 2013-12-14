@@ -39,7 +39,7 @@
     <!--<h1 class="font-bree-serif">backbone_generator</h1>-->
     <!--<p class="font-open-sans-normal">A plugin that helps you build your backbone.js apps</p>-->
     
-    <p class="jumbo"> <a href="https://github.com/tawrahim/backbone_generator" class="btn btn-inverse btn-large font-open-sans-normal"><strong>View gem on GitHub</strong></a> <a href="https://rubygems.org/gems/backbone_generator" class="btn btn-success btn-large font-open-sans-normal"><strong>View on rubygems.org</strong><small>(v0.0.4)</small></a> </p>
+    <p class="jumbo"> <a href="https://github.com/tawrahim/backbone_generator" class="btn btn-inverse btn-large font-open-sans-normal"><strong>View gem on GitHub</strong></a> <a href="https://rubygems.org/gems/backbone_generator" class="btn btn-success btn-large font-open-sans-normal"><strong>View on rubygems.org</strong><small>(v0.0.5)</small></a> </p>
     
 <a href="https://github.com/tawrahim/backbone_generator"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
   </div><!--end container-->  
@@ -64,7 +64,7 @@
           =====================================
           -->
           <div class="tab-pane active" id="overview">
-                    	<section class="sec-header">
+            <section class="sec-header">
                 <h3 class="font-bree-serif">new</h3>
                 <p>To scaffold out new backbonejs app run this command</p>
                 <pre class="prettyprint linenums"> backbone_generator new app_name </pre>
@@ -242,22 +242,114 @@ thumbnails {
           ==================================
           !-->
 
-          <div class="tab-pane" id="tutorial">
-                <h3 class="font-bree-serif">Getting Started</h3>
-              <iframe width="760" height="415" src="//www.youtube.com/embed/azAcM" frameborder="0" allowfullscreen></iframe>
-
-                <h3 class="font-bree-serif">Adding a model</h3>
-              <iframe width="760" height="415" src="//www.youtube.com/embed/azAcM" frameborder="0" allowfullscreen></iframe>
-                <h3 class="font-bree-serif">Adding a view</h3>
-              <iframe width="760" height="415" src="//www.youtube.com/embed/azAcM" frameborder="0" allowfullscreen></iframe>
-                <h3 class="font-bree-serif">Adding a template</h3>
-              <iframe width="760" height="415" src="//www.youtube.com/embed/azAcM" frameborder="0" allowfullscreen></iframe>
-                <h3 class="font-bree-serif">Adding a utility</h3>
-              <iframe width="760" height="415" src="//www.youtube.com/embed/azAcM" frameborder="0" allowfullscreen></iframe>
-                <h3 class="font-bree-serif">Modifying the routes</h3>
-              <iframe width="760" height="415" src="//www.youtube.com/embed/azAcM" frameborder="0" allowfullscreen></iframe>
-                <h3 class="font-bree-serif">Adding a jasmine test</h3>
-              <iframe width="760" height="415" src="//www.youtube.com/embed/azAcM" frameborder="0" allowfullscreen></iframe>
+          <div class="tab-pane tutorial" id="tutorial">
+            <section class="sec-header">
+                <h3 class="font-bree-serif">A tutorial on how how to use the gem</h3>
+                <p>
+                    To get started we first need to run the <code>new</code> command with the name of our
+                    project. The plugin would generate a number of boiler plate code for you and also initialize
+                    your project as a git repository. The plugin also includes <strong>JQuery, Requirejs, Underscore,
+                    and Backbone.js</strong>. Below is what the expected output should look like.
+                </p>
+                <img src="assets/img/new_app.png" alt="" />
+                <p></p>
+                <p></p>
+                <p></p>
+                <p>
+                Next, we need to navigate into our application, in my case the command it is <code>~$cd MyApp </code>, before
+                we start modifying or changing anything in our project, I think it is good idea for us to view what was generated
+                in our favourite web browser. The plugin ships with a command to start a server in our project. We can pass the
+                <code>server</code> flag to our gem and have it start the server. The default port it runs on is <strong>5000</strong>.
+                You can pass in port number if you are using port <strong>5000</strong> for something else. Below is what you should see
+                </p>
+                <img src="assets/img/server.png" alt="" />
+                <p></p>
+                <p></p>
+                <p></p>
+                <p>
+                 From your browser navigate to <strong>0.0.0.0:5000</strong>. The generated page should look similar to this
+                </p>
+                <img src="assets/img/browser.png" alt="" />
+                <p></p>
+                <p></p>
+                <p></p>
+                <p>
+                Great, looks like everything is working as expected, now we need to roll our sleeves and get ready to write some code.
+                Open the project with your favourite text editor (VIM *wink), you should see something similar to this
+                </p>
+                <img src="assets/img/directory.png" alt="" />
+                <p></p>
+                <p></p>
+                <p></p>
+                <p>
+                <ol>
+                    <li>
+                    <p>
+                    The file  <strong><code>app.js</code></strong> is the one that contains the code for initializing our application. 
+                    It also defines the paths to our libraries, among other things it does is initialize our routes. 
+                    Finally our application's main utility is loaded in the file.
+                    </p>
+                    </li>
+                    <li>
+                    <p>
+                    The file <strong><code>Main.View.js</code></strong> is the first view that gets initialized, this means that if we want
+                    any view to be run the first time that the applications starts up, that is where we specify it. If we take a look
+                    at it its current content we notice that we are loading and also initializing the <code>Hello.View</code> of our
+                    application
+                    </p>
+                    </li>
+                    <li>
+                    <p>
+                    If we take a look at the file <strong><code>Hello.View.js</code></strong> we notice that the associated template for this
+                    view has been included for us. Another observation from this file is the <code>el</code> refrence that we have. The 
+                    div <code>hello_div</code> is defined in our <code>index.html</code> file, this allows us to target that section of the
+                    page for including our compiled template. Please note that when you generate a view, the plugin also generates
+                    an associated template for you.
+                    </p>
+                    <img src="assets/img/helloView.png" alt="" />
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    </li>
+                    <li>
+                    <p>
+                    The file <strong><code>Route.js</code></strong>
+                    </p>
+                    <img src="assets/img/mainRoute.png" alt="" />
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    </li>
+                    <li>
+                    <p>
+                    The file <strong><code>Hello.Collection.js</code></strong>
+                    </p>
+                    <img src="assets/img/helloCollection.png" alt="" />
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    </li>
+                    <li>
+                    <p>
+                    The file <strong><code>Hello.Model.js</code></strong>
+                    </p>
+                    <img src="assets/img/helloModel.png" alt="" />
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    </li>
+                    <li>
+                    <p>
+                    The file <strong><code>Main.Utility.js</code></strong>
+                    </p>
+                    <img src="assets/img/mainUtility.png" alt="" />
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    </li>
+                </ol>
+                </p>
+			</section>
           </div><!--end tutorial-content-->
            <!-- 
           =====================================

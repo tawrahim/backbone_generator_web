@@ -99,12 +99,21 @@ header{
   background-position:center;
   width: auto; 
   height: 408px;
-  text-indent: -9999px;
+  /*text-indent: -9999px;*/
   margin: 30px auto;
   -moz-background-size:cover; 
   -webkit-background-size:cover; 
   background-size:cover;
-
+}
+#logo {
+    margin-top: 10px !important;
+    padding-top: 6em;
+    font-size: 40px;
+    color: #51a351;
+    font-weight: bolder;
+}
+#subhead {
+    padding-top: 16px;
 }
 .masthead h1{ 
   font-size: 36px;
